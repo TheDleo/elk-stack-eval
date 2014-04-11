@@ -28,7 +28,7 @@ class elasticsearch {
   include jre
 
   exec { 'dpkg -i elasticsearch':
-    command => "dpkg -i ${::root}/elasticsearch-1.0.1.deb",
+    command => "dpkg -i ${::root}/elasticsearch-1.1.0.deb",
     creates => '/etc/elasticsearch',
     require => Class['jre']
   }
@@ -72,7 +72,7 @@ class logstash {
   include jre
 
   exec { 'dpkg -i logstash':
-    command => "dpkg -i ${::root}/logstash_1.3.3-1-debian_all.deb",
+    command => "dpkg -i ${::root}/logstash_1.4.0-1-c82dc09_all.deb",
     creates => '/etc/logstash',
     require => Class['jre']
   }
@@ -105,7 +105,7 @@ class logstash {
 }
 
 class kibana {
-  $kibana = 'kibana-3.0.0milestone5'
+  $kibana = 'kibana-3.0.1'
 
   package { 'apache2':
     ensure => present
