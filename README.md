@@ -3,6 +3,7 @@ ELK Stack Eval
 
 Steps
 -----
+First off clone this repo then cd into the project directory then run the following commands:
 
     wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.1.1.deb
     wget https://download.elasticsearch.org/logstash/logstash/packages/debian/logstash_1.4.0-1-c82dc09_all.deb
