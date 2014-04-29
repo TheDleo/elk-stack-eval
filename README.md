@@ -4,7 +4,7 @@ ELK Stack Eval
 Steps
 -----
 
-    wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.1.0.deb
+    wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.1.1.deb
     wget https://download.elasticsearch.org/logstash/logstash/packages/debian/logstash_1.4.0-1-c82dc09_all.deb
     wget https://download.elasticsearch.org/kibana/kibana/kibana-3.0.1.tar.gz
     git submodule update --init
