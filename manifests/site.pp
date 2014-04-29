@@ -28,7 +28,7 @@ class elasticsearch {
   include jre
 
   exec { 'dpkg -i elasticsearch':
-    command => "dpkg -i ${::root}/elasticsearch-1.1.0.deb",
+    command => "dpkg -i ${::root}/elasticsearch-1.1.1.deb",
     creates => '/etc/elasticsearch',
     require => Class['jre']
   }
